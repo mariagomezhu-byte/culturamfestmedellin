@@ -138,3 +138,36 @@ body { font-family: 'Montserrat', sans-serif; line-height: 1.4; color: #222; }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
  }
+
+ /* Estado normal (escritorio) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mainmenu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .mainmenu ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .mainmenu ul.show {
+    display: flex;
+  }
+}
