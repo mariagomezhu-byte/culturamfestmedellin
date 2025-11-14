@@ -14,16 +14,19 @@
         <img src="img/logo.png" alt="Banner del festival">
       </div>
        <nav class="mainmenu">
-         <ul>
-            <li><a href="inicio">Inicio</a></li>
-            <li><a href="entradas">Entradas</a></li>
-            <li><a href="programacion">Programación</a></li>
-            <li><a href="como-llegar">Cómo llegar</a></li>
-            <li><a href="mapa">Mapa</a></li>
-            <li><a href="galeria">Galería</a></li>
-            <li><a href="contacto">Contacto</a></li>
-        </ul>
-      </nav>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+
+  <ul id="menu">
+    <li><a href="inicio">Inicio</a></li>
+    <li><a href="entradas">Entradas</a></li>
+    <li><a href="programacion">Programación</a></li>
+    <li><a href="como-llegar">Cómo llegar</a></li>
+    <li><a href="mapa">Mapa</a></li>
+    <li><a href="galeria">Galería</a></li>
+    <li><a href="contacto">Contacto</a></li>
+  </ul>
+</nav>
+
     </div>
   </header>
 
@@ -163,5 +166,10 @@
       <p>© 2025 CulturamFest. Todos los derechos reservados.</p>
     </div>
   </footer>
+  <script>
+document.getElementById("hamburger").onclick = function () {
+  document.getElementById("menu").classList.toggle("show");
+};
+</script>
 </body>
 </html>
